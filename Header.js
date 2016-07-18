@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 export default class Header extends Component{
-	render : function () {
+	render () {
 		return (
 			<View style={styles.flex}>
 				<Text style={styles.font}>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 		height:50,
 		borderBottomWidth:3/PixelRatio.get(),
 		borderBottomColor:"#EF2D36",
-		alignItens:"center"
+		alignItems:"center"
 	},
 	font:{
 		fontSize:25,
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 	},
 	font_1:{
 		color:'#CD1D1C'
-	}
+	},
 	font_2:{
 		color:"#FFF",
 		backgroundColor:"#CD1D1C"
