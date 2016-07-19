@@ -5,7 +5,8 @@ import {
   Text,
   View,
   TextInput,
-  PixelRatio
+  PixelRatio,
+  TouchableHighlight
 } from 'react-native';
 
 const onePT = 1/PixelRatio.get();
@@ -37,7 +38,9 @@ export default class Search extends Component {
 			              }}/>
 					</View>
 					<View style={styles.btn}>
-						<Text style={styles.search} onPress={this.hide.bind(this,this.state.value)}>搜索</Text>
+						<TouchableHighlight underlayColor="#E1F6FF">
+							<Text style={styles.search} onPress={this.hide.bind(this,this.state.value)}>搜索</Text>
+						</TouchableHighlight>
 					</View>
 				</View>
 				{this.state.show?
