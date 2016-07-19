@@ -12,18 +12,14 @@ import {
   View
 } from 'react-native';
 
-import MyImage from 'MyImage'
+import Search from './Search'
 
-const imgs = [
-  'http://vczero.github.io/ctrip/hua2.png',
-  'http://vczero.github.io/ctrip/nian2.png',
-  'http://vczero.github.io/me/img/xiaoxue.png'
-];
+
 class App extends Component {
   render() {
     return (
-      <View style={[styles.flex,{marginTop:40}]}>
-        <MyImage imgs={imgs}></MyImage>
+      <View style={[styles.flex,styles.topStatus]}>
+        <Search></Search>
       </View>
     );
   }
