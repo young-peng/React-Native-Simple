@@ -17,11 +17,6 @@ export default class Search extends Component {
        this.state = {show:false};
 	}
 
-
-	getValue(text){
-		this.state.show=true;
-		this.state.value=text;
-	}
 	hide(val){
 		this.state.show=false;
 		this.state.value=val;
@@ -37,7 +32,9 @@ export default class Search extends Component {
 			              placeholder="请输入关键字"  
 			              onEndEditing={this.hide.bind(this, this.state.value||"")} 
 			              value={this.state.value}        
-			              onChangeText={this.getValue.bind(this)}/>
+			              onChangeText={(text)=>{
+			              	this.setState({show:true,value:text})
+			              }}/>
 					</View>
 					<View style={styles.btn}>
 						<Text style={styles.search} onPress={this.hide.bind(this,this.state.value)}>搜索</Text>
