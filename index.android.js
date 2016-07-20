@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-import MyImage from 'MyImage'
+import MyImage from './MyImage'
 
 const imgs = [
   'http://vczero.github.io/ctrip/hua2.png',
